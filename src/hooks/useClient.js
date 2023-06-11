@@ -22,8 +22,8 @@ export const useClient = ({ apiKey, userData, tokenOrProvider }) => {
           .then(() => {
             console.log('connection closed');
           });
-      };
-    }, [apiKey, userData.id, tokenOrProvider]); // eslint-disable-next-line react-hooks/exhaustive-deps
+      }; // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [apiKey, userData.id, tokenOrProvider]); 
   
     return client;
   };
