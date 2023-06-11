@@ -23,7 +23,7 @@ export const useClient = ({ apiKey, userData, tokenOrProvider }) => {
             console.log('connection closed');
           });
       };
-    }, [apiKey, userData.id, tokenOrProvider]);
+    }, [apiKey, userData, tokenOrProvider]);
   
     return client;
   };
