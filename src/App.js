@@ -110,8 +110,8 @@ if (!client) {
           <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
             <input type="text" id="id" name="id" placeholder='ID' onChange={handleChange} value={id} />
             <input type="text" id="details" name="details" placeholder='Channel Name' onChange={handleotherChange} value={details} />
-            <button class="button-15" role="button" onClick={() => {addChannel({id:id, details:details})}}>Add new channel</button>
-            <button class="button-15" role="button" onClick={() => {removeChannel({id:id, details:details})}}>Delete channel</button>
+            <button class="button-15" onClick={() => {addChannel({id:id, details:details})}}>Add new channel</button>
+            <button class="button-15" onClick={() => {removeChannel({id:id, details:details})}}>Delete channel</button>
           </div>
         <ChannelHeader />
         <MessageList />
