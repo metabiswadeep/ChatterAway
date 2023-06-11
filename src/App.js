@@ -23,7 +23,7 @@ const user = {
   image: 'https://getstream.io/random_svg/?name=Biswadeep',
 };
 
-  const client = useClient({ apiKey: 'xweyehq2qrnt', userData: user, tokenOrProvider: userToken });
+  const client = useClient({ apiKey: 'xweyehq2qrnt', userData: user, tokenOrProvider: userToken }); // eslint-disable-next-line react-hooks/exhaustive-deps
 
 
   if (!client) return null;
